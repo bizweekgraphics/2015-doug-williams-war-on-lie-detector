@@ -1,0 +1,178 @@
+/*
+		_   _
+               / '-' \
+              ;       ;
+           /'-|       |-'\
+          |   |_______|   |
+          \   '-------'   /
+           '.___.....___.'
+              | ;  : ;|
+             _|;__;__.|_
+            |     Y     |    .--.
+   .--.      \__.'^'.__/    /;   \
+  /   ;\      |_  ;  _|     |  ' |
+  | ;  |      { `"""` }     |;   |
+  |;   |      ;`-.__.'|     |:  ;|
+  | ;  \      |;  ;   |_____/ ;  |
+  |   '.'-----'      ' -_   .'   /
+  \  '.   - _  ' ;  ;  _  -    .'
+   '.   -     - ;  ;   .------`
+     `--------.      ;|
+          scd |;  ,   |	__        ___   _    _  _____   ___ ____  
+              |     ; |	\ \      / | | | |  / \|_   _| |_ _/ ___| 
+              |. ;    |	 \ \ /\ / /| |_| | / _ \ | |    | |\___ \ 
+              | :    :|	  \ V  V / |  _  |/ ___ \| |    | | ___) |
+              |   .   |	   \_/\_/  |_| |_/_/   \_|_|   |___|____/ 
+              |   .   |	 ____  _____ ____ ___ ____ _   _   ___         
+              |;  ,   |	|  _ \| ____/ ___|_ _/ ___| \ | | |__ \   
+              |     ; |	| | | |  _| \___ \| | |  _|  \| |   / /        
+              |. ;    |	| |_| | |___ ___) | | |_| | |\  |  |_|       
+              | :    :|	|____/|_____|____|___\____|_| \_|  (_)     
+              |;   ;  |
+              `"-----"`  
+ */
+
+* {padding:0;margin:0;box-sizing:content-box;}
+
+body, html{
+	font-family: 'HaasText', arial, sans-serif;
+	height:100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+a{text-decoration: none;font-weight: bold; color:#000;}
+ 
+#wrap p {margin-top: 20px}
+
+#wrap {
+	max-width: 600px;
+	font-size: 17px;
+	line-height: 23px;
+}
+
+#wrap img {width: 100%}
+
+.center {margin: 0 auto;}
+
+h1, h2, h3, .pullQ {font-family:'Druk Bold Web';text-transform: uppercase;}
+h1 {font-size: 200px; line-height:180px; }
+h2{font-size:50px; line-height: 44px;}
+h3{font-size:30px; line-height: 34px;}
+
+#head {
+	background: #000 url('img/header.jpg') no-repeat center top; 
+	width:100%;
+	height:920px;
+	text-align: center;
+	color:#fff;
+} 
+
+#head h3 {position: absolute;bottom: 20px;left:35%;}
+
+#title {padding-top: 60px}
+.man {background:#000;color:#fff;display:inline-block;padding:20px;height:160px;}
+.vs{font-size: 70px}
+.machine {background:#fff;color:#000;display:inline-block;padding:20px;height:160px;}
+
+.pullQ {font-size: 86px;line-height: 76px;text-align: center;margin: 40px -100px;text-shadow: -2px 2px 0px rgba(229, 92, 71, 1);}
+.coolpic {margin: 40px -230px 10px -230px}
+.coolpic img{width: 100%}
+
+.intro {font-size: 28px; line-height: 32px;padding-top: 30px}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper {
+  display: block;
+}
+
+.videoWrapper2 {
+  width: 100%;
+  height: 0;
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.caption{font-size: 16px;text-transform: uppercase;color:#5c5c5c;margin-bottom: 40px}
+
+.videoWrapper2 .video-js {
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+#credits {margin: 40px auto;}
+
+
+@font-face{font-family:'Druk Bold Web';src:url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.eot);
+src:url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.eot?#iefix) 
+format('embedded-opentype'),url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.woff) 
+format('woff'),url(https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.ttf) 
+format('truetype'),url('https://s3.amazonaws.com/bw-fonts/Druk-Bold-Web.svg#Druk Web') 
+format('svg');font-weight:500;font-style:normal;font-stretch:normal}
+
+@font-face{font-family:'Druk Web';src:url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.eot);
+src:url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.eot?#iefix) 
+format('embedded-opentype'),url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.woff) 
+format('woff'),url(https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.ttf) 
+format('truetype'),url('https://s3.amazonaws.com/bw-fonts/Druk-Medium-Web.svg#Druk Web') 
+format('svg');font-weight:500;font-style:normal;font-stretch:normal}
+
+@font-face{font-family:'Druk Wide Web';src:url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.eot);
+src:url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.eot?#iefix) 
+format('embedded-opentype'),url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.woff) 
+format('woff'),url(https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.ttf) 
+format('truetype'),url('https://s3.amazonaws.com/bw-fonts/DrukWide-Super-Web.svg#Druk Wide Web') 
+format('svg');font-weight:900;font-style:normal;font-stretch:normal}
+
+
+
+
+
+
+
+
+
+@media (max-width:900px){
+	h1 {font-size: 130px; line-height:120px; }
+	.man {height:100px;}
+	.machine {height:100px;}
+}
+
+
+@media (max-width:800px){
+	.coolpic {margin: 40px 0px}
+	.coolpic {margin: 40px 0px}
+	.pullQ {font-size: 80px;line-height: 65px;margin: 40px 0px;}
+	h1 {font-size: 140px; line-height:120px; }
+  h2 {font-size: 40px;line-height: 36px;padding-top: 20px}
+	.vs{font-size: 50px}
+	.man {height:100px;}
+	.machine {height:100px;}
+}
+
+@media (max-width:600px){
+	#wrap{font-size: 16px;line-height: 20px;padding: 0 20px}
+	.pullQ {font-size: 60px;line-height: 55px;}
+	.man {height:100px;}
+	.machine {height:100px;}
+	h2 {font-size: 40px;line-height: 36px;padding-top: 20px}
+
+}
+
+
+@media (max-width:400px){
+	.coolpic {margin: 40px 0px}
+	h1 {font-size: 100px; line-height:80px; }
+  h2 {font-size: 30px;line-height: 28px;}
+	.vs{font-size: 40px}
+
+	.man {height:60px;}
+	.machine {height:60px;}
+}
