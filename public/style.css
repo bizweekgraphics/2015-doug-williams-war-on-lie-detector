@@ -39,15 +39,16 @@ body, html{
 
 a{text-decoration: none;font-weight: bold; color:#000;}
  
-#wrap p {margin-top: 20px}
+.wrap p {margin-top: 20px}
 
-#wrap {
+.wrap {
 	max-width: 600px;
 	font-size: 17px;
 	line-height: 23px;
+  margin: 0 auto;
 }
 
-#wrap img {width: 100%}
+.wrap img {width: 100%}
 
 .center {margin: 0 auto;}
 
@@ -87,7 +88,26 @@ h3{
 .vs{font-size: 70px}
 .machine {background:#fff;color:#000;display:inline-block;padding:20px;height:160px;}
 
-.pullQ {font-size: 86px;line-height: 76px;text-align: center;margin: 40px -100px;text-shadow: -2px 2px 0px rgba(229, 92, 71, 1);}
+.pullQ {
+  font-size: 86px;
+  line-height: 76px;
+  text-align: center;
+  margin: 40px 0;
+  text-shadow: -2px 2px 0px rgba(229, 92, 71, 1);
+  position: relative;
+}
+.pullQ .pullQ-inner {
+  margin: 0 auto;
+  max-width: 10em;
+}
+.pullQ svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0,-50%);
+  z-index: -1;
+}
+
 .coolpic {margin: 40px -230px 10px -230px}
 .coolpic img{width: 100%}
 
@@ -171,7 +191,7 @@ format('svg');font-weight:900;font-style:normal;font-stretch:normal}
 }
 
 @media (max-width:600px){
-	#wrap{font-size: 16px;line-height: 20px;padding: 0 20px}
+	.wrap{font-size: 16px;line-height: 20px;padding: 0 20px}
 	.pullQ {font-size: 60px;line-height: 55px;}
 	.man {height:100px;}
 	.machine {height:100px;}
@@ -188,4 +208,26 @@ format('svg');font-weight:900;font-style:normal;font-stretch:normal}
 
 	.man {height:60px;}
 	.machine {height:60px;}
+}
+
+/* Polygraph SVG (Toph) */
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis {
+  display: none;
+}
+
+.x.axis line {
+  shape-rendering: auto;
+}
+
+.line {
+  fill: none;
+  stroke: #e55c47;
+  stroke-width: 4px;
 }
