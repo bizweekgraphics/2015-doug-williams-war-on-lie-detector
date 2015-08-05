@@ -366,6 +366,15 @@ Video by: <strong>Jennafer Savino and Justin Beach</strong>
               d3.select('#full-header-space').classed('stuck', fixedHeader)
             }
           });
+
+          // check if user has switched away from tab or whatever
+          var hasBlurred = false;
+          function handleVisibilityChange() {
+            // document.hidden appears to be true when you switch away and false when you switch back...
+            // console.log(document.hidden);
+            hasBlurred = true;
+          }
+          document.addEventListener("visibilitychange", handleVisibilityChange, false);
         </script>
 
   <script type="text/javascript" src="skrollr.min.js"></script>
@@ -439,6 +448,13 @@ d3.select(window)
     .on("mousemove", function() { ++count; });
 
 (function tick() {
+
+  // stops animation if you switch away from the window
+  // otherwise transitions pile up in the background, for reasons i don't quite understand,
+  // eventually crashing the tab and maybe even your browser!!
+  // think of all the suffering i've caused, not fixing this sooner... :(
+  if(hasBlurred) return;
+
   transition = transition.each(function() {
 
     // update the domains
