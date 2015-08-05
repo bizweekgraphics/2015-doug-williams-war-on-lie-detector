@@ -135,7 +135,16 @@ h3{
 
 .caption{font-size: 16px;color:#5c5c5c;margin-bottom: 40px}
 
-.videoWrapper2 .video-js {
+/* 
+  .video-js for desktop, .bvp-google-ads-container for mobile 
+  yes, bplayer.js is device-specific, not just responsive
+  has to do with mobile inline video and ads or whatever
+
+  .bvp-google-ads-container doesn't even exist on desktop
+  .video-js is nested within .bvp-google-ads-container on mobile
+  the redundancy doesn't break anything
+*/
+.videoWrapper2 .video-js, .videoWrapper2 .bvp-google-ads-container {
   position: absolute;
   top: 0;
   width: 100% !important;
