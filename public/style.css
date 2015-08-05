@@ -242,3 +242,9 @@ format('svg');font-weight:900;font-style:normal;font-stretch:normal}
   stroke: #e55c47;
   stroke-width: 4px;
 }
+
+/* Terrrrminallll */
+
+.terminal .videoWrapper {
+  display: none;
+}
